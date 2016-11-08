@@ -1,0 +1,1 @@
+Compiling this code requires software packages of the FreeRTOS and drivers of the I.MX7D board from NXP to be downloaded. This is only the code for the controller software implementation. For full implementation please contact the authors.
