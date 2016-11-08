@@ -1,0 +1,14 @@
+Step 2: Compile the driver for the Q8 data acquisition unit and insert the kernel module
+
+make modules
+sudo insmod q8Driv.ko
+dmesg
+find the “Major Number” from the dmesg log (probably it is 248)
+sudo mknod /dev/q8 c 248 0 (248 should be replaced with the major number from previous step)
+
+Step 2: Compile the interface with the board over the serial port
+gcc pc_serial_interface_with_board_controller.c -o pc_serial_interface_with_board_controller
+sudo ./pc_serial_interface_with_board_controller
+
+
+
